@@ -109,6 +109,19 @@ function reverse(str) {
 
 // ...
 
+const findLongestWord = string => {
+  let stringArray = string.split(' ')
+  let longest = 0
+  let word = null
+  for (let i = 0; i < stringArray.length; i++) {
+    if (longest < stringArray[i].length) {
+      longest = stringArray[i].length
+      word = stringArray[i]
+    }
+  }
+  return word
+}
+
 /**
  * NOTE: Don't modify anything below this line...
  */
